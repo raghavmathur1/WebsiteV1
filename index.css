@@ -1,0 +1,21 @@
+body{
+	margin: 0;
+	font-family: open sans;
+	height: 100%;
+}
+
+.container{
+	height: 77px;
+
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+	overflow: hidden;
+}
+
+.text{
+	text-align: center;
+	font-size: 3.5em;
+	margin: 100px 0 0 0;
+}
