@@ -175,8 +175,6 @@ hr{
 	.ham{
 		display: flex;
 	}
-
-
 }
 
 @media(min-width: 1024px){
