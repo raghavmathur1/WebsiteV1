@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+</head>
+<body>
+	<div class="container">
+		<div class="ham">
+			<div class="hamlines"></div>
+			<div class="hamlines"></div>
+			<div class="hamlines"></div>
+		</div>
+
+		<div class="side" >
+			<img src="user.png" class="im">
+			<hr>
+
+			<div class="option">
+				<div class="be">Dashboard</div>
+				<div class="be">play</div>
+				<div class="be">rules</div>
+				<div class="be">leaderboard</div>
+				<div class="be">contact</div>
+				<div class="be">logout</div>
+			</div>
+		</div>
+
+		<div class="mc">
+			<div class="main">
+				<div class="level">
+					Level 0
+				</div>
+
+				<div class="qs">
+					Where are you
+				</div>
+				<div class="sb">
+					<input class="submit" placeholder="Answer"></input>
+
+					<div class="enter">
+						<img src="submit.png" class="s">
+					</div>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div class="main2">
+
+		</div>
+	</div>
+
+	<script type="text/javascript">
+
+		var x = 0;
+
+		$(".ham").click(function () {
+			if (x==0) {
+				$(".side").css({"left":"0"})
+				$(".hamlines").css({"background":"#fff"})
+				$(".main2").css({"opacity":"0.7", "z-index":"50"})
+				x=1;
+			}
+			else{
+				$(".side").css({"left":"-300px"})
+				$(".hamlines").css({"background":"#0D9476"})
+				$(".main2").css({"opacity":"0", "z-index":"-1"})
+				x=0;
+			}
+		})
+	</script>
+</body>
+</html>
