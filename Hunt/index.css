@@ -161,6 +161,11 @@ hr{
 	transition: all 0.5s ease;
 }
 
+a{
+	color: inherit;
+	text-decoration: none;
+}
+
 
 @media(min-width: 1024px){
 	.side{

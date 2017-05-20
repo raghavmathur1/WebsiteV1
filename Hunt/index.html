@@ -10,23 +10,23 @@
 </head>
 <body>
 	<div class="container">
-		<div class="ham">
-			<div class="hamlines"></div>
-			<div class="hamlines"></div>
-			<div class="hamlines"></div>
+		<div class="ham" onclick="myfunction()">
+			<div class="hamlines" id="hamlines"></div>
+			<div class="hamlines" id="hamlines2"></div>
+			<div class="hamlines" id="hamlines3"></div>
 		</div>
 
-		<div class="side" >
+		<div class="side" id="side">
 			<img src="logo.png" class="im">
 			<hr>
 
 			<div class="option">
-				<div class="be">Dashboard</div>
-				<div class="be">play</div>
-				<div class="be">rules</div>
-				<div class="be">leaderboard</div>
-				<div class="be">contact</div>
-				<div class="be">logout</div>
+				<a href=""><div class="be">Dashboard</div></a>
+				<a href=""><div class="be">play</div></a>
+				<a href=""><div class="be">rules</div></a>
+				<a href=""><div class="be">leaderboard</div></a>
+				<a href=""><div class="be">contact</div></a>
+				<a href=""><div class="be">logout</div></a>
 			</div>
 		</div>
 
@@ -51,7 +51,7 @@
 			
 		</div>
 
-		<div class="main2">
+		<div class="main2" id="main2">
 
 		</div>
 	</div>
@@ -60,20 +60,25 @@
 
 		var x = 0;
 
-		$(".ham").click(function () {
+		function myfunction(){
 			if (x==0) {
-				$(".side").css({"left":"0"})
-				$(".hamlines").css({"background":"#fff"})
-				$(".main2").css({"opacity":"0.7", "z-index":"50"})
-				x=1;
+				document.getElementById('side').style.left = '0%'
+				document.getElementById('hamlines').style.background = '#fff'
+				document.getElementById('hamlines2').style.background = '#fff'
+				document.getElementById('hamlines3').style.background = '#fff'
+				document.getElementById('main2').style.opacity = '0.7'
+				document.getElementById('main2').style.zIndex = '50'
+				x = 1
+			}else{
+				document.getElementById('side').style.left = '-300px'
+				document.getElementById('hamlines').style.background = '#0D9476'
+				document.getElementById('hamlines2').style.background = '#0D9476'
+				document.getElementById('hamlines3').style.background = '#0D9476'
+				document.getElementById('main2').style.opacity = '0'
+				document.getElementById('main2').style.zIndex = '-1'
+				x = 0
 			}
-			else{
-				$(".side").css({"left":"-300px"})
-				$(".hamlines").css({"background":"#0D9476"})
-				$(".main2").css({"opacity":"0", "z-index":"-1"})
-				x=0;
-			}
-		})
+		}
 	</script>
 </body>
 </html>
