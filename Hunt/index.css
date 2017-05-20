@@ -17,7 +17,7 @@ body{
 .im{
 	display: block;
 	width: 70%;
-	margin:30px auto; 
+	margin:70px auto; 
 }
 
 hr{
@@ -175,6 +175,8 @@ hr{
 	.ham{
 		display: flex;
 	}
+
+
 }
 
 @media(min-width: 1024px){
@@ -187,6 +189,7 @@ hr{
 		z-index: 100;
 		transition: all 0.5s ease;
 	}
+
 
 }
 
@@ -231,5 +234,7 @@ hr{
 	.main{
 		width: 90%;
 	}
+
+
 }
 
