@@ -5,7 +5,7 @@ body{
 }
 
 .side{
-	position: absolute;
+	position: fixed;
 	left: 0;
 	width: 24%;
 	background: #0D9476;
@@ -111,6 +111,7 @@ hr{
 	font-size: 1.2em;
 	height:60px ;
 	border: none;
+	padding: 0;
 	padding-left: 4%;
 	outline: none; 
 
@@ -161,22 +162,6 @@ hr{
 }
 
 
-@media(max-width: 800px){
-	.side{
-		left: -300px;
-		width: 300px;
-	}
-
-	.mc{
-		left: 0;
-		width: 100%;
-	}
-
-	.ham{
-		display: flex;
-	}
-}
-
 @media(min-width: 1024px){
 	.side{
 		position: absolute;
@@ -187,8 +172,6 @@ hr{
 		z-index: 100;
 		transition: all 0.5s ease;
 	}
-
-
 }
 
 
@@ -232,7 +215,5 @@ hr{
 	.main{
 		width: 90%;
 	}
-
-
 }
 
