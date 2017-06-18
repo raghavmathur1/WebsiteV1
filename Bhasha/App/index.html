@@ -98,28 +98,43 @@
       	console.log(vidId);
 
         $(document).ready(function()  {
-          $.post("http://palashs-mac.local:5000/audio",
-          {
-            id: vidId
-          },
-          function(data, status){
-            console.log("Data: " + data + "\nStatus: " + status);
-            if(status=="success") {
-              if(!UrlExists("http://palashs-mac.local:5000/static/"+vidId+".mp3"))  {
-                console.log("file not created");
-              }
-              else  {
-                console.log("success");
-                foo=new Audio("http://palashs-mac.local:5000/static/"+vidId+".mp3");
-                        // foo.play();
-                        console.log("Audio Ready");
-                        $(".tick").show();
-                      }
-                    }
-                    else  {
-                      console.log("Ajax failed");
-                    }
-                  });
+
+
+          if(!UrlExists("http://palashs-mac.local:5000/static/"+vidId+".mp3"))  {
+                        $.post("http://palashs-mac.local:5000/audio",
+                        {
+                          id: vidId
+                        },
+                        function(data, status){
+                          console.log("Data: " + data + "\nStatus: " + status);
+                          if(status=="success") {
+                            if(!UrlExists("http://palashs-mac.local:5000/static/"+vidId+".mp3"))  {
+                              console.log("file not created");
+                            }
+                            else  {
+                              console.log("success");
+                              foo=new Audio("http://palashs-mac.local:5000/static/"+vidId+".mp3");
+                                      // foo.play();
+                                      console.log("Audio Ready");
+                                      $(".tick").show();
+                                    }
+                                  }
+                                  else  {
+                                    console.log("Ajax failed");
+                                  }
+                                });
+          }
+          else  {
+                              console.log("success");
+                              foo=new Audio("http://palashs-mac.local:5000/static/"+vidId+".mp3");
+                                      // foo.play();
+                                      console.log("Audio 00 Ready");
+                                      $(".tick").show();
+          }
+
+
+
+
 
         });
 
