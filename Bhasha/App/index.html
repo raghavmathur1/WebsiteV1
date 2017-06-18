@@ -56,7 +56,9 @@
          <div class="eng lan">ENGLISH</div>
          <div class="hin lan">HINDI</div>
        </div>
-
+       <div onclick="" class="play tick">
+        <i class="fa fa-check" aria-hidden="true"></i>
+</div>
        <div class="dropdown2">
          <div class="eng2 lan">ENGLISH</div>
          <div class="hin2 lan">HINDI</div>
@@ -111,6 +113,7 @@
                 foo=new Audio("http://palashs-mac.local:5000/static/"+vidId+".mp3");
                         // foo.play();
                         console.log("Audio Ready");
+                        $(".tick").show();
                       }
                     }
                     else  {
