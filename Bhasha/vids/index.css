@@ -113,17 +113,13 @@ body{
 
 }
 
-.bdiv p{
-}
-
 
 .backim{
 	position: relative;
 	width: 100%;
-	height:200px ;
+	height:250px ;
 	background: url(youtube.jpg) center center;
 	background-size: cover;
-
 }
 
 
@@ -235,4 +231,24 @@ input::placeholder{
 	font-size: 18px;
 	margin-left:15px ;
 	position: absolute;
+}
+
+.bim1{
+	background: url(https://i.ytimg.com/vi/egeMAIXYIvI/maxresdefault.jpg) center center;
+	background-size: cover;
+}
+
+.bim2{
+	background: url(https://www.tomscott.com/speaking/speaking-1.jpg) center center;
+	background-size: cover;
+}
+
+.bim3{
+	background: url(http://www.tubefilter.com/wp-content/uploads/2016/03/tom-scott-youtube-video-id.jpg) center center;
+	background-size: cover;
+}
+
+.bim4{
+	background: url(https://i.ytimg.com/vi/qU5wgqv0CfU/maxresdefault.jpg) center center;
+	background-size: cover;
 }
