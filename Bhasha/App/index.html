@@ -54,7 +54,7 @@
 
        <div class="dropdown">
          <div class="eng lan">ENGLISH</div>
-         <div class="hin lan">HINDI</div>
+         <div class="hin lan selected">HINDI</div>
        </div>
        <div onclick="" class="play tick">
         <i class="fa fa-check" aria-hidden="true"></i>
@@ -69,6 +69,8 @@
  </div>
 
  <script>
+
+  
 
   function UrlExists(url)
   {
@@ -91,6 +93,34 @@
       var playing =0;
       var foo;
       var hindi =1;
+
+      $(document).ready(function()  {
+        console.log(-1);
+        $('.eng').click(function()  {
+          console.log(0);
+          if(hindi==1)  {
+            hindi=0;
+            $('.eng').addClass("selected");
+                        $('.hin').removeClass("selected");
+            foo.volume=0;
+            player.unMute();
+          }  
+        });
+
+        $('.hin').click(function()  {
+                    console.log(1);
+
+          if(hindi==0)  {
+            hindi=1;
+            foo.volume=1;
+            $('.hin').addClass("selected");
+            $('.eng').removeClass("selected");
+            player.mute();
+          }
+        });
+      });
+
+
       function onYouTubeIframeAPIReady() {
       	var url_string = window.location.href;
       	var url = new URL(url_string);
@@ -98,6 +128,10 @@
       	console.log(vidId);
 
         $(document).ready(function()  {
+        
+
+
+
 
 
           if(!UrlExists("http://palashs-mac.local:5000/static/"+vidId+".mp3"))  {

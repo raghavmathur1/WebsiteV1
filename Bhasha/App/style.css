@@ -188,3 +188,6 @@ input::placeholder{
 	color:#fff ;
 }
 
+.selected	{
+	background-color: #001f31;
+}
