@@ -239,7 +239,7 @@ input::placeholder{
 }
 
 .bim2{
-	background: url(https://www.tomscott.com/speaking/speaking-1.jpg) center center;
+	background: url(https://yt3.ggpht.com/-wfgbhGPnCrg/AAAAAAAAAAI/AAAAAAAAAAA/7bn1i_GXf_s/s900-c-k-no-mo-rj-c0xffffff/photo.jpg) center center;
 	background-size: cover;
 }
 
@@ -249,6 +249,10 @@ input::placeholder{
 }
 
 .bim4{
-	background: url(https://i.ytimg.com/vi/qU5wgqv0CfU/maxresdefault.jpg) center center;
+	background: url(https://i.ytimg.com/vi/kpCJyQ2usJ4/maxresdefault.jpg) center center;
+	background-size: cover;
+}
+.bim5{
+	backgroud: url(https://i.ytimg.com/vi/mCSUmwP02T8/maxresdefault.jpg) center center;
 	background-size: cover;
 }
