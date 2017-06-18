@@ -234,4 +234,5 @@ input::placeholder{
 	line-height: 70px;
 	font-size: 18px;
 	margin-left:15px ;
+	position: absolute;
 }
