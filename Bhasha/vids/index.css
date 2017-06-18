@@ -227,3 +227,11 @@ a{
 input::placeholder{
 	color:#fff ;
 }
+
+.ar{
+	font-family: open sans;
+	color:#fff;
+	line-height: 70px;
+	font-size: 18px;
+	margin-left:15px ;
+}
