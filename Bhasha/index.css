@@ -285,7 +285,7 @@ input{
 
 .align{
 	display: flex;
-	width: 92%;
+	width: 80%;
 	margin: 0 auto;
 	flex-wrap: wrap;
 	justify-content: space-around;
