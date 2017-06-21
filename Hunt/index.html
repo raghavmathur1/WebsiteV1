@@ -48,8 +48,6 @@
 					</div>
 				</div>
 			</div>
-
-			
 		</div>
 
 		<div class="main2" id="main2">
@@ -60,13 +58,32 @@
 
 
 
-		<div class="chatbox">
-			<div class="chat">
+		<div class="chatbox box">
+			<div class="chat chat2">
 				<i class="fa fa-user dis1" aria-hidden="true"></i>
-				<i class="fa fa-close dis2" aria-hidden="true"></i>
+				<div class="dis2">
+					Chat
+					<i class="fa fa-close ri" aria-hidden="true"></i>
+				</div>
 			</div>
 
+			<div class="cha">
+				<div class="messages">
+					<div class="mess rmess">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+					</div>
+					<div class="mess lmess">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+					</div>
+				</div>
 
+				<div class="inp">
+					<input type="" name="" placeholder="Send a message">	
+					<div class="ent">
+						<i class="fa fa-chevron-right adj" aria-hidden="true"></i>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -100,13 +117,23 @@
 			if (chat == 0) {
 				$(".chat").addClass("chat2")
 				$(".chatbox").addClass("box")
+				$(".cha").css({"display":"block"})
+
 				chat = 1;
 			}else{
 				$(".chat").removeClass("chat2")
 				$(".chatbox").removeClass("box")
+
+				$(".cha").css({"display":"none"})
+				$(".main").css({"left":"0"})
 				chat = 0;
 			}
 		})
+
+		$(".ent").click(function () {
+			$(".messages").append('<div class="mess rmess"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</div>')
+		})
+
 	</script>
 </body>
 </html>
