@@ -7,6 +7,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 <body>
 	<div class="container">
@@ -54,6 +55,19 @@
 		<div class="main2" id="main2">
 
 		</div>
+
+
+
+
+
+		<div class="chatbox">
+			<div class="chat">
+				<i class="fa fa-user dis1" aria-hidden="true"></i>
+				<i class="fa fa-close dis2" aria-hidden="true"></i>
+			</div>
+
+
+		</div>
 	</div>
 
 	<script type="text/javascript">
@@ -79,6 +93,20 @@
 				x = 0
 			}
 		}
+
+
+		var	chat = 0;
+		$(".chat").click(function () {
+			if (chat == 0) {
+				$(".chat").addClass("chat2")
+				$(".chatbox").addClass("box")
+				chat = 1;
+			}else{
+				$(".chat").removeClass("chat2")
+				$(".chatbox").removeClass("box")
+				chat = 0;
+			}
+		})
 	</script>
 </body>
 </html>
