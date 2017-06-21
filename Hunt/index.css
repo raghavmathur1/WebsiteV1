@@ -354,8 +354,7 @@ input{
 	font-family: open sans;
 	font-size: 11px;
 	border-radius:2px ;
-	animation-duration: 0.7s !important;
-
+	animation-duration: 1s !important;
 }
 
 .rmess{
@@ -363,6 +362,7 @@ input{
 	display: block;
 	background:#0D9476 ;
 	color: #fff;
+
 }
 
 .lmess{

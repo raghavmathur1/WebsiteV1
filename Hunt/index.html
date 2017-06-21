@@ -133,7 +133,7 @@
 
 		$(".ent").click(function () {
 			var textmessage = $(".inpmess").val()
-			$(".messages").append('<div class="mess rmess">' +textmessage +' </div><div class="mess lmess">' +textmessage +' </div>')
+			$(".messages").append('<div class="mess rmess animated slideInUp">' +textmessage +' </div><div class="mess lmess animated slideInUp">' +textmessage +' </div>')
 			var objDiv = document.getElementById("me");
 			objDiv.scrollTop = objDiv.scrollHeight;
 			$(".inpmess").val('')
