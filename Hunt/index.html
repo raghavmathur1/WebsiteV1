@@ -59,8 +59,8 @@
 
 
 
-		<div class="chatbox box">
-			<div class="chat chat2">
+		<div class="chatbox">
+			<div class="chat">
 				<i class="fa fa-user dis1" aria-hidden="true"></i>
 				<div class="dis2">
 					Chat
@@ -70,11 +70,11 @@
 
 			<div class="cha">
 				<div class="messages" id="me">
-	
+
 				</div>
 
 				<div class="inp">
-					<input type="" name="" placeholder="Send a message" class="inpmess">	
+					<input type="" name="" placeholder="Send a message" class="inpmess" required>	
 					<div class="ent">
 						<i class="fa fa-chevron-right adj" aria-hidden="true"></i>
 					</div>
@@ -119,19 +119,19 @@
 			}else{
 				$(".chat").removeClass("chat2")
 				$(".chatbox").removeClass("box")
-
 				$(".cha").css({"display":"none"})
-				$(".main").css({"left":"0"})
 				chat = 0;
 			}
 		})
 
 		$(".ent").click(function () {
 			var textmessage = $(".inpmess").val()
-			$(".messages").append('<div class="mess rmess animated slideInUp">' +textmessage +' </div><div class="mess lmess animated slideInUp">' +textmessage +' </div>')
-			var objDiv = document.getElementById("me");
-			objDiv.scrollTop = objDiv.scrollHeight;
-			$(".inpmess").val('')
+			if (!textmessage == "") {
+				$(".messages").append('<div class="mess rmess animated slideInUp">' +textmessage +' </div><div class="mess lmess animated slideInUp">' +textmessage +' </div>')
+				var objDiv = document.getElementById("me");
+				objDiv.scrollTop = objDiv.scrollHeight;
+				$(".inpmess").val('')
+			}
 		})
 
 	</script>
