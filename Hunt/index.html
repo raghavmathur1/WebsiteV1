@@ -8,6 +8,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
 <body>
 	<div class="container">
@@ -68,7 +69,7 @@
 			</div>
 
 			<div class="cha">
-				<div class="messages">
+				<div class="messages" id="me">
 					<div class="mess rmess">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
 					</div>
@@ -131,7 +132,10 @@
 		})
 
 		$(".ent").click(function () {
-			$(".messages").append('<div class="mess rmess"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</div>')
+			$(".messages").append('<div class="mess rmess animated fadeInRight">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. </div><div class="mess lmess animated fadeInLeft"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. </div>')
+
+			var objDiv = document.getElementById("me");
+			objDiv.scrollTop = objDiv.scrollHeight;
 		})
 
 	</script>
