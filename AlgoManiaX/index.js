@@ -1,4 +1,4 @@
-toplist = ["Home", "About" ,"Members", "Achievements","Events" ,"Contact Us"]
+toplist = ["Home", "About" ,"Members", "Achievements","Events" ,"Contact Us", "Menu"]
 $(".container").append('<div class="topbar"><div class="rightlist"></div></div>')
 for (var i = 0; i < toplist.length; i++) {
 	$(".rightlist").append('<div class="list" id="'+ toplist[i] +'">'+ toplist[i] +'</div>')
@@ -32,7 +32,7 @@ $("#Achievements").click(function(){
 });
 
 $("#Events").click(function(){
-	var y = $(".events").offset().top;
+	var y = $(".events").offset().top-100;
 	$('body').animate({scrollTop:y},1000);
 });
 
@@ -41,9 +41,9 @@ var scroll = 0;
 $(document).scroll(function() { 
 	scroll = $(this).scrollTop();
 	if(scroll > 500) {
-		$(".topbar").css({"background-color":"#0f0f0f", "height":"60px"})
+		$(".topbar").css({"background-color":"#0f0f0f"})
 	} else {
-		$(".topbar").css({"background-color":"transparent", "height":"80px"})
+		$(".topbar").css({"background-color":"transparent"})
 
 	}
 
@@ -65,4 +65,16 @@ $(document).scroll(function() {
 	
 });
 
+var men = 0
 
+$("#Menu").click(function () {
+	if (men == 0) {
+		$(".topbar").css({"height":"450px"})
+		$(".rightlist").css({"margin-top":"0px"})
+		men = 1;
+	}else{
+		$(".topbar").css({"height":"80px"})
+		$(".rightlist").css({"margin-top":"-400px"})
+		men = 0;
+	}
+})

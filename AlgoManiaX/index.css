@@ -6,7 +6,7 @@ body{
 
 .topbar{
 	position: fixed;
-	height:80px ;
+	height:8vh ;
 	display: flex;
 	width: 100%;
 	justify-content: flex-end;
@@ -25,6 +25,7 @@ body{
 
 .list{
 	padding: 0 20px ;
+	font-size:1em ;
 }
 
 .back{
@@ -194,12 +195,11 @@ a{
 	width: auto;
 	background: #fff;
 	box-shadow: 12px 15px 20px 0 rgba(46,61,73,.15);
-	height:70px ;
 	margin-top:50px ;
 	font-size: 20px;
 	display: flex;
 	justify-content: space-between;
-	padding:0 20px;
+	padding: 20px;
 	align-items: center;
 	opacity: 0;
 }
@@ -217,3 +217,71 @@ a{
 	transform: scale(0);
 	transition: all 0.7s ease;
 }
+
+#Menu{
+	display: none;
+	font-size:20px ;
+	margin-top:25px;
+}
+
+
+@media(max-width: 900px){
+	.eve{
+		font-size:18px	 ;
+	}
+
+	.evelist{
+		width:90% ;
+	}
+
+	.achlist{
+		width:90% ;
+	}
+}
+
+
+@media(max-width: 600px){
+	.rightlist{
+		flex-direction: column ;
+		margin-top:-400px  ;
+		justify-content:  center;
+		width: 100%;
+	}
+
+	.topbar{
+		background: #000 !important;
+	}
+
+	.list{
+		padding: 20px 0;
+	}
+
+	#Menu{
+		display: block ;
+	}
+}
+
+@media(min-width: 600px){
+
+	.rightlist{
+		margin-top:0 !important;
+		flex-direction: row !important; 
+	}
+
+	.topbar{
+		background: transparent;
+	}
+}
+
+
+@media(max-width: 400px){
+	.head{
+		font-size:50px ;
+		letter-spacing:1px ;
+	}
+
+	.eve{
+		flex-direction: column;
+	}
+}
+
