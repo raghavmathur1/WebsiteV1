@@ -3,11 +3,12 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 	<div class="container">
-		<div class="circ">
+		<div class="circ" id="circ">
 			<div class="upper">
 				<div class="text">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -18,17 +19,20 @@
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</div>
 			</div>
-			<div class="lower">
-				<div class="buttons">
-					Learn Now
-				</div>
 
-				<div class="buttons do">
-				Documentation
-				</div>
+			<div class="right" id="do">
+				<i class="fa fa-chevron-right" aria-hidden="true"></i>
 			</div>
 
-			<div class="doc">
+			<div class="left" id="do2">
+				<i class="fa fa-chevron-left" aria-hidden="true"></i>
+			</div>
+
+			<div class="doc" id="doc">
+				
+			</div>
+
+			<div class="feat" id="feat">
 				
 			</div>
 		</div>
@@ -36,12 +40,33 @@
 
 	<script type="text/javascript">
 		$(document).ready(function () {
-			$('.circ').bind('mousewheel', function(e) {
-				$(this).css({"width":"1250px", "height":"1250px"})
+			/*var x = $("#circ");
+			var y = $("#doc");
+			var z = $("#do");*/
+
+			var x = 0;
+			$("#circ").bind('mousewheel', function(e) {
+				$("#circ").css({"width":"1250px", "height":"1250px"})
 			});
 
-			$(".do").click(function () {
-				$(".doc").css({"width":"1250px","height":"1250px"})
+			$("#do").click(function () {
+				if (x == 0) {
+					$("#doc").css({"width":"1250px","height":"1250px"})
+					x++;
+				}else if(x == 1){
+					$("#feat").css({"width":"1250px","height":"1250px"})
+					x++
+				}
+			})
+
+			$("#do2").click(function () {
+				if (x == 1) {
+					$("#doc").css({"width":"0px","height":"0px"})
+					x--;
+				}else if(x == 2){
+					$("#feat").css({"width":"0px","height":"0px"})
+					x--;
+				}
 			})
 		})
 	</script>

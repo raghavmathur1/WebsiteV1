@@ -56,3 +56,28 @@ body{
 	background-color: #C42333; 
 	transition: all 0.8s ease;
 }
+
+.feat{
+	width: 0;
+	height: 0;
+	position: fixed;
+	border-radius:100%;
+	background-color: #05C18F; 
+	transition: all 0.8s ease;
+}
+
+.right{
+	font-size:50px ;
+	color: #fff;
+	position: absolute;
+	right:150px ;
+	z-index: 10000;
+}
+
+.left{
+	font-size:50px ;
+	color: #fff;
+	position: absolute;
+	left:150px ;
+	z-index: 10000;
+}
