@@ -17,4 +17,42 @@ body{
 	margin: 0 auto;
 	border-radius: 100%;
 	transition: all 0.5s ease;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.lower{
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	bottom:50px ;
+}
+
+.text{
+	color: #fff;
+	font-family: open sans;
+	width:900px ;
+
+}
+
+.buttons{
+	margin:20px 10px;
+	color: #fff;
+	font-family: open sans;
+	font-size:20px ;
+	border: 2px solid #fff;
+	padding:10px 20px ;
+	border-radius: 50px	;
+}
+
+.doc{
+	width: 0;
+	height: 0;
+	position: fixed;
+	border-radius:100%;
+	background-color: #C42333; 
+	transition: all 0.8s ease;
 }

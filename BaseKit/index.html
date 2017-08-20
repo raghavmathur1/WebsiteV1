@@ -8,15 +8,41 @@
 <body>
 	<div class="container">
 		<div class="circ">
+			<div class="upper">
+				<div class="text">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+			</div>
+			<div class="lower">
+				<div class="buttons">
+					Learn Now
+				</div>
 
+				<div class="buttons do">
+				Documentation
+				</div>
+			</div>
+
+			<div class="doc">
+				
+			</div>
 		</div>
 	</div>
 
 	<script type="text/javascript">
 		$(document).ready(function () {
 			$('.circ').bind('mousewheel', function(e) {
-				$(this).css({"transform":"scale(2.5)"})
+				$(this).css({"width":"1250px", "height":"1250px"})
 			});
+
+			$(".do").click(function () {
+				$(".doc").css({"width":"1250px","height":"1250px"})
+			})
 		})
 	</script>
 </body>
