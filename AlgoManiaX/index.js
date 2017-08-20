@@ -1,14 +1,4 @@
-toplist = ["Home", "About" ,"Members", "Achievements","Events" ,"Contact Us", "Menu"]
-$(".container").append('<div class="topbar"><div class="rightlist"></div></div>')
-for (var i = 0; i < toplist.length; i++) {
-	$(".rightlist").append('<div class="list" id="'+ toplist[i] +'">'+ toplist[i] +'</div>')
-	
-}
 
-members = ["lorem", "ipsum" ,"dolor", "lorem", "ipsum", "lorem", "ipsum" ,"dolor", ]
-for (var x = 0; x < members.length; x++) {
-	$(".memlist").append('<div class="block mem'+ x +'"><div class="photo"></div><div class="memtext">'+ members[x] +'</div>')
-}
 
 
 $("#About").click(function(){
@@ -78,3 +68,15 @@ $("#Menu").click(function () {
 		men = 0;
 	}
 })
+
+toplist = ["Home", "About" ,"Members", "Achievements","Events" ,"Contact Us", "Menu"]
+$(".container").append('<div class="topbar"><div class="rightlist"></div></div>')
+for (var i = 0; i < toplist.length; i++) {
+	$(".rightlist").append('<div class="list" id="'+ toplist[i] +'">'+ toplist[i] +'</div>')
+	
+}
+
+members = ["lorem", "ipsum" ,"dolor", "lorema", "ipsum", "lorema", "ipsum" ,"dolor", ]
+for (var x = 0; x < members.length; x++) {
+	$(".memlist").append('<div class="block mem'+ x +'"><div class="photo" style="background:url(&#39'+members[x]+'.png&#39);"></div><div class="memtext">'+ members[x] +'</div>')
+}	

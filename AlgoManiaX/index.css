@@ -138,7 +138,8 @@ a{
 	width:160px ;
 	height:160px ;
 	border-radius: 100%;
-	background: black;
+	background-position: center center !important;
+	background-size: cover !important;
 }
 
 .memtext{
