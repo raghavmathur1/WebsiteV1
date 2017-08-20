@@ -7,6 +7,7 @@ body{
 	height: 100vh;
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .circ{
@@ -22,28 +23,31 @@ body{
 	align-items: center;
 	flex-wrap: wrap;
 	flex-direction: column;
+	position: relative;
 }
 
 .lower{
+	position: fixed;
+	bottom:0px ;
+	overflow: hidden;
+	transition-delay: 0s;
+	z-index: 50000000000;
+	transition: all 0.5s ease;
+}
+
+
+.lower div{
 	display: flex;
+	transition: all 0.5s ease;
 	flex-direction: row;
-	position: absolute;
-	bottom:50px ;
 }
 
-.text{
-	color: #fff;
-	font-family: open sans;
-	width:900px ;
-
-}
 
 .buttons{
-	margin:20px 10px;
+	margin:20px 0px;
 	color: #fff;
 	font-family: open sans;
 	font-size:20px ;
-	border: 2px solid #fff;
 	padding:10px 20px ;
 	border-radius: 50px	;
 }
@@ -51,33 +55,62 @@ body{
 .doc{
 	width: 0;
 	height: 0;
-	position: fixed;
+	position: absolute;
 	border-radius:100%;
 	background-color: #C42333; 
 	transition: all 0.8s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .feat{
 	width: 0;
 	height: 0;
-	position: fixed;
+	position: absolute;
 	border-radius:100%;
 	background-color: #05C18F; 
 	transition: all 0.8s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.right{
-	font-size:50px ;
-	color: #fff;
+.over{
+	width: 0;
+	height: 0;
 	position: absolute;
-	right:150px ;
-	z-index: 10000;
+	border-radius:100%;
+	background-color: #118AB2; 
+	transition: all 0.8s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.left{
-	font-size:50px ;
-	color: #fff;
+.api{
+	width: 0;
+	height: 0;
 	position: absolute;
-	left:150px ;
-	z-index: 10000;
+	border-radius:100%;
+	background-color: #A04668; 
+	transition: all 0.8s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.head{
+	font-family: open sans;
+	font-size:30px ;
+	color: #fff;
+	opacity: 0;
+	transition: all 0.5s ease;
+	text-align: center;
+}
+
+.ran{
+	font-size: 15px;
+	margin:0 250px ;
+
 }

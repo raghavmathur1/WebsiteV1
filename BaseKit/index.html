@@ -3,7 +3,7 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="animate.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
@@ -11,62 +11,126 @@
 		<div class="circ" id="circ">
 			<div class="upper">
 				<div class="text">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<img src="logo.png">
+				</div>
+			</div>
+			<div class="lower">
+				<div id="move">
+					<div class="buttons do" id="do">
+						Documentation
+					</div>
+
+					<div class="buttons" id="do2">
+						Features
+					</div>
+
+					<div class="buttons do" id="do3">
+						Overview
+					</div>
+
+					<div class="buttons do" id="do4">
+						API
+					</div>
 				</div>
 			</div>
 
-			<div class="right" id="do">
-				<i class="fa fa-chevron-right" aria-hidden="true"></i>
-			</div>
-
-			<div class="left" id="do2">
-				<i class="fa fa-chevron-left" aria-hidden="true"></i>
-			</div>
-
 			<div class="doc" id="doc">
-				
+				<div class="head h1 animated">
+					Documentation
+					<div class="ran">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+				</div>
 			</div>
 
 			<div class="feat" id="feat">
-				
+				<div class="head h2 animated">
+					Features
+				</div>
+			</div>
+
+			<div class="over" id="over">
+				<div class="head h3 animated">
+					Overview
+				</div>
+			</div>
+
+			<div class="api" id="api">
+				<div class="head h4 animated">
+					API
+				</div>
 			</div>
 		</div>
 	</div>
 
 	<script type="text/javascript">
 		$(document).ready(function () {
-			/*var x = $("#circ");
-			var y = $("#doc");
-			var z = $("#do");*/
-
-			var x = 0;
 			$("#circ").bind('mousewheel', function(e) {
 				$("#circ").css({"width":"1250px", "height":"1250px"})
+
 			});
 
 			$("#do").click(function () {
-				if (x == 0) {
-					$("#doc").css({"width":"1250px","height":"1250px"})
-					x++;
-				}else if(x == 1){
-					$("#feat").css({"width":"1250px","height":"1250px"})
-					x++
-				}
+				$("#doc").css({"width":"100%","height":"100%"})
+				$("#api").css({"width":"0%","height":"0%"})
+				$("#feat").css({"width":"0%","height":"0%"})
+				$("#over").css({"width":"0%","height":"0%"})
+				$(".h2").removeClass("fadeInUp")
+				$(".h3").removeClass("fadeInUp")
+				$(".h4").removeClass("fadeInUp")
+				$(".h1").removeClass("fadeOutDown")
+				setTimeout(function (argument) {
+					$(".h1").addClass("fadeInUp")
+
+				}, 1000)
+				
 			})
 
 			$("#do2").click(function () {
-				if (x == 1) {
-					$("#doc").css({"width":"0px","height":"0px"})
-					x--;
-				}else if(x == 2){
-					$("#feat").css({"width":"0px","height":"0px"})
-					x--;
-				}
+				$("#feat").css({"width":"100%","height":"100%"})
+				$("#api").css({"width":"0%","height":"0%"})
+				$("#doc").css({"width":"0%","height":"0%"})
+				$("#over").css({"width":"0%","height":"0%"})
+				$(".h1").removeClass("fadeInUp")
+				$(".h3").removeClass("fadeInUp")
+				$(".h4").removeClass("fadeInUp")
+				$(".h2").removeClass("fadeOutDown")
+				setTimeout(function (argument) {
+					$(".h2").addClass("fadeInUp")
+				}, 1000)
+			})
+
+			$("#do3").click(function () {
+				$("#over").css({"width":"100%","height":"100%"})
+				$("#api").css({"width":"0%","height":"0%"})
+				$("#feat").css({"width":"0%","height":"0%"})
+				$("#doc").css({"width":"0%","height":"0%"})
+				$(".h1").removeClass("fadeInUp")
+				$(".h2").removeClass("fadeInUp")
+				$(".h4").removeClass("fadeInUp")
+				$(".h3").removeClass("fadeOutDown")
+				setTimeout(function (argument) {
+					$(".h3").addClass("fadeInUp")
+				}, 1000)
+			})
+
+			$("#do4").click(function () {
+				$("#api").css({"width":"100%","height":"100%"})
+				$("#doc").css({"width":"0%","height":"0%"})
+				$("#feat").css({"width":"0%","height":"0%"})
+				$("#over").css({"width":"0%","height":"0%"})
+				$(".h1").removeClass("fadeInUp")
+				$(".h3").removeClass("fadeInUp")
+				$(".h2").removeClass("fadeInUp")
+				$(".h4").removeClass("fadeOutDown")
+				setTimeout(function (argument) {
+					$(".h4").addClass("fadeInUp")
+				}, 1000)
 			})
 		})
 	</script>
