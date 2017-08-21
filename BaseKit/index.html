@@ -4,18 +4,24 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="animate.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+	<script type="text/javascript" src="jquery.min.js"></script>
 </head>
 <body>
 	<div class="container">
 		<div class="circ" id="circ">
 			<div class="upper">
-				<div class="text">
-					<img src="logo.png">
-				</div>
+				<img src="logo.png" id="logo">
 			</div>
 			<div class="lower">
 				<div id="move">
+
+					<div class="buttons do" id="do3">
+						Overview
+					</div>
+
 					<div class="buttons do" id="do">
 						Documentation
 					</div>
@@ -23,20 +29,56 @@
 					<div class="buttons" id="do2">
 						Features
 					</div>
-
-					<div class="buttons do" id="do3">
-						Overview
-					</div>
-
-					<div class="buttons do" id="do4">
-						API
-					</div>
 				</div>
 			</div>
 
 			<div class="doc" id="doc">
-				<div class="head h1 animated">
+				<div class="head animated" id="h1">
 					Documentation
+					<div id="doctext">
+						<div class="cont">
+							<div class="ran" id="docran">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</div>
+							<img src="doc1.jpg" class="docs">
+						</div>
+
+						<div class="cont">
+							<img src="doc1.jpg" class="docs">
+							<div class="ran" id="docran">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</div>
+						</div>
+
+						<div class="cont">
+							<div class="ran" id="docran">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</div>
+							<img src="doc1.jpg" class="docs">
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="over" id="over">
+				<div class="head animated" id="h3">
+					Overview
 					<div class="ran">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -45,94 +87,126 @@
 						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 					</div>
+
+					<div>
+						<iframe src="https://www.youtube.com/embed/RbrS-rqndz0" frameborder="0" allowfullscreen></iframe>
+					</div>
 				</div>
 			</div>
 
 			<div class="feat" id="feat">
-				<div class="head h2 animated">
+				<div class="head animated" id="h2">
 					Features
+					<div class="icontain">
+						<div class="icons">
+							<div class="icontext">
+								<i class="fa fa-bolt" aria-hidden="true"></i>
+							</div>
+
+							Fast
+						</div>
+
+						<div class="icons">
+							<div class="icontext">
+								<i class="fa fa-bolt" aria-hidden="true"></i>
+							</div>
+
+							Fast
+						</div>
+
+						<div class="icons">
+							<div class="icontext">
+								<i class="fa fa-bolt" aria-hidden="true"></i>
+							</div>
+
+							Fast
+						</div>
+
+						<div class="icons">
+							<div class="icontext">
+								<i class="fa fa-bolt" aria-hidden="true"></i>
+							</div>
+
+							Fast
+						</div>
+					</div>
 				</div>
+
+
 			</div>
 
-			<div class="over" id="over">
-				<div class="head h3 animated">
-					Overview
-				</div>
-			</div>
-
-			<div class="api" id="api">
-				<div class="head h4 animated">
-					API
-				</div>
-			</div>
+			
 		</div>
 	</div>
 
 	<script type="text/javascript">
-		$(document).ready(function () {
-			$("#circ").bind('mousewheel', function(e) {
-				$("#circ").css({"width":"1250px", "height":"1250px"})
+		$(window).load(function () {
 
+			var x = $("#h1");
+			var y = $("#h2");
+			var z = $("#h3");
+			var b = $("#doc");
+			var c = $("#api");
+			var d = $("#feat");
+			var e = $("#over");
+			var f = $("#circ");
+
+			$("body").bind('mousewheel', function(e) {
+				f.css({"width":"230vh", "height":"230vh"})
+				setTimeout(function () {
+					f.css({"border-radius":"0"})
+				}, 1000)
 			});
 
 			$("#do").click(function () {
-				$("#doc").css({"width":"100%","height":"100%"})
-				$("#api").css({"width":"0%","height":"0%"})
-				$("#feat").css({"width":"0%","height":"0%"})
-				$("#over").css({"width":"0%","height":"0%"})
-				$(".h2").removeClass("fadeInUp")
-				$(".h3").removeClass("fadeInUp")
-				$(".h4").removeClass("fadeInUp")
-				$(".h1").removeClass("fadeOutDown")
-				setTimeout(function (argument) {
-					$(".h1").addClass("fadeInUp")
-
+				b.css({"width":"100%","height":"100%"})
+				c.css({"width":"0%","height":"0%"})
+				d.css({"width":"0%","height":"0%"})
+				e.css({"width":"0%","height":"0%"})
+				y.css({"display":"none"})
+				z.css({"display":"none"})
+				x.css({"display":"block"})
+				y.removeClass("fadeInUp")
+				z.removeClass("fadeInUp")
+				/*
+				$("body").css({ "overflow-y":"auto"})*/
+				x.removeClass("fadeOutDown")
+				$("#doctext").css({"overflow-y":"auto"})
+				setTimeout(function () {
+					x.addClass("fadeInUp")
 				}, 1000)
-				
+
 			})
 
 			$("#do2").click(function () {
-				$("#feat").css({"width":"100%","height":"100%"})
-				$("#api").css({"width":"0%","height":"0%"})
-				$("#doc").css({"width":"0%","height":"0%"})
-				$("#over").css({"width":"0%","height":"0%"})
-				$(".h1").removeClass("fadeInUp")
-				$(".h3").removeClass("fadeInUp")
-				$(".h4").removeClass("fadeInUp")
-				$(".h2").removeClass("fadeOutDown")
-				setTimeout(function (argument) {
-					$(".h2").addClass("fadeInUp")
+				d.css({"width":"100%","height":"100%"})
+				c.css({"width":"0%","height":"0%"})
+				b.css({"width":"0%","height":"0%"})
+				e.css({"width":"0%","height":"0%"})
+				y.css({"display":"block"})
+				x.removeClass("fadeInUp")
+				z.removeClass("fadeInUp")
+				y.removeClass("fadeOutDown")
+				setTimeout(function () {
+					y.addClass("fadeInUp")
 				}, 1000)
 			})
 
 			$("#do3").click(function () {
-				$("#over").css({"width":"100%","height":"100%"})
-				$("#api").css({"width":"0%","height":"0%"})
-				$("#feat").css({"width":"0%","height":"0%"})
-				$("#doc").css({"width":"0%","height":"0%"})
-				$(".h1").removeClass("fadeInUp")
-				$(".h2").removeClass("fadeInUp")
-				$(".h4").removeClass("fadeInUp")
-				$(".h3").removeClass("fadeOutDown")
-				setTimeout(function (argument) {
-					$(".h3").addClass("fadeInUp")
-				}, 1000)
-			})
-
-			$("#do4").click(function () {
-				$("#api").css({"width":"100%","height":"100%"})
-				$("#doc").css({"width":"0%","height":"0%"})
-				$("#feat").css({"width":"0%","height":"0%"})
-				$("#over").css({"width":"0%","height":"0%"})
-				$(".h1").removeClass("fadeInUp")
-				$(".h3").removeClass("fadeInUp")
-				$(".h2").removeClass("fadeInUp")
-				$(".h4").removeClass("fadeOutDown")
-				setTimeout(function (argument) {
-					$(".h4").addClass("fadeInUp")
+				e.css({"width":"100%","height":"100%"})
+				c.css({"width":"0%","height":"0%"})
+				d.css({"width":"0%","height":"0%"})
+				b.css({"width":"0%","height":"0%"})
+				x.removeClass("fadeInUp")
+				z.css({"display":"block"})
+				y.removeClass("fadeInUp")
+				z.removeClass("fadeOutDown")
+				setTimeout(function () {
+					z.addClass("fadeInUp")
 				}, 1000)
 			})
 		})
+		
 	</script>
 </body>
 </html>
