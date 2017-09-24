@@ -1,0 +1,65 @@
+body{
+	margin: 0;
+	background:url(wallp.jpg) center center no-repeat;
+	background-size: 100%; 
+	height: 100vh;
+	overflow: hidden;
+}
+
+.start{
+	height: 100vh;
+	width: 100vw;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.load{
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	animation-delay: 2s;
+	animation-duration: 0.3s;
+}
+
+.load img{
+	width: 500px;
+	transition: all 0.5s ease;
+}
+
+
+.bottom{
+	width: 100vw;
+	height:10vh ;
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+}
+
+.bottom div{
+	display: flex;
+	justify-content: space-around;	
+	width: 50%;
+}
+
+.bottom img{
+	height: 8vh;
+	transition: all 0.4s ease;
+}
+
+.bottom img:hover{
+	margin-top: -15px;
+}
+
+.topr{
+	position: absolute;
+	top:2vh ;
+	right:2vh ;
+	color:#fff ;
+	font-family: open sans;
+}
