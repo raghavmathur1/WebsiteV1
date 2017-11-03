@@ -12,7 +12,7 @@ a{
 }
 
 ::-webkit-scrollbar {
-	width: 10px;
+	width: 2px;
 	height: 0;
 }
 ::-webkit-scrollbar-track {
@@ -105,7 +105,6 @@ nav  .register {
 
 .main  .mainCont  .title   .log{
 	width: 250px;
-	transform: rotate(90deg);
 
 }
 
@@ -191,7 +190,7 @@ nav  .register {
 
 .big{
 	font-weight: bolder;
-	font-size: 2.5em;
+	font-size: 2.2em;
 }
 
 .wat{
@@ -264,6 +263,7 @@ nav  .register {
 	height:auto ;
 	display: flex;
 	flex-wrap: wrap;
+	background: #333;
 }
 
 .top{
@@ -294,16 +294,18 @@ nav  .register {
 	font-size: 2.4em;
 	font-family: open sans;
 	color: #fff;
-	margin: 0px 0 0 50px ;
+	margin: 0px 0 0 0px ;
 	font-weight: lighter;
 	letter-spacing: 3px;
 
 }
 
-
+.rcon{
+	margin-left: 50px;
+}
 .button{
 	
-	margin: 20px 0 0 50px ;
+	margin: 20px 0 0 0px ;
 	padding: 10px 20px;
 	color: #fff;
 	font-family: open sans;	
@@ -328,7 +330,7 @@ nav  .register {
 	font-size: 0.6em;
 	font-family: Arial;
 	color: #fff;
-	margin: 30px 0 10px 55px ;
+	margin: 30px 0 10px 0px ;
 	letter-spacing: 5px;
 }
 
@@ -336,7 +338,7 @@ nav  .register {
 	font-size: 0.7em;
 	font-family: roboto;
 	color: #fff;
-	margin: 30px 0 0px 50px ;
+	margin: 30px 0 0px 0px ;
 	width:80% ;
 	font-weight: 100;
 	letter-spacing: 2px;
@@ -347,7 +349,7 @@ nav  .register {
 .c2{
 	display: flex;
 	flex-direction: row;
-
+	background: #333;
 }
 
 .c3{
@@ -356,17 +358,17 @@ nav  .register {
 }
 
 .im1{
-	background: url("smart watch full.png") center center no-repeat;
-	background-size: cover; 
+	background: url("poster 2.png") center center no-repeat;
+	background-size: contain; 
 }
 
 .im2{
-	background: url("im3.png") center right no-repeat;
+	background: url("poster 3.png") center right no-repeat;
 	background-size: cover; 
 }
 
 .im3{
-	background: url("design 3.png") center right no-repeat;
+	background: url("back.png") center right no-repeat;
 	background-size: cover; 
 }
 
@@ -390,10 +392,35 @@ nav  .register {
 @media(max-width: 650px){
 	.fet{
 		flex-direction: column !important;
+
+	}
+
+	.f2{
+		flex-direction: column-reverse !important;
 	}
 
 	.l{
 		width: 100%;
+	}
+
+	.l2{
+		text-align: center;
+	}
+
+	.big{
+		font-size: 1.8em;
+	}
+
+	.right{
+		align-items: center;
+	}
+
+	.rcon{
+		margin-left: 0;
+	}
+
+	.head{
+		font-size: 2em;
 	}
 }
 
