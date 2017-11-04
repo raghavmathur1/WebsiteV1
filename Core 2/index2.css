@@ -101,6 +101,7 @@ nav  .register {
 	font-weight: bolder;
 	font-size: 4.2em;
 	line-height: 70px;
+	text-align: center;
 }
 
 .main  .mainCont  .title   .log{
@@ -217,6 +218,7 @@ nav  .register {
 	font-family: 'Archivo Black', open sans;
 	font-size: 2.7em;
 	line-height: 70px;
+	text-align: center;
 }
 
 .til  .line{
@@ -277,7 +279,7 @@ nav  .register {
 	width: 100%;
 	height: 500px;
 	background: -webkit-linear-gradient(left, #fc5e42 0%,#fc3071 100%);
-	opacity: 0.3;
+	opacity: 0.2;
 }
 
 .left{
@@ -291,7 +293,7 @@ nav  .register {
 .right{
 	width: 50%;
 	height: 500px;
-	background: #282b4f;
+	background: #222445;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -365,17 +367,20 @@ nav  .register {
 }
 
 .im1{
-	background: url("poster 2.png") center center no-repeat;
+	background: url("watch1.png") center center no-repeat;
+	background-position: 50% 50%;
 	background-size: contain; 
 }
 
 .im2{
-	background: url("poster 3.png") center right no-repeat;
+	background: url("watch2.png") center right no-repeat;
+	background-position: 50% 50%;
 	background-size: contain; 
 }
 
 .im3{
-	background: url("back.png") center right no-repeat;
+	background: url("watch3.png") center right no-repeat;
+	background-position: 50% 50%;
 	background-size: contain; 
 }
 
@@ -383,6 +388,12 @@ nav  .register {
 .rightside{
 	width: 100vw;
 	height: auto;
+}
+
+.footer
+{
+	width: 100%;
+	height: 200px;
 }
 
 
