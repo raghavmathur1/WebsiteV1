@@ -72,7 +72,7 @@ nav  .register {
 	z-index: -100;
 	top: 0;
 	position: fixed;
-	background: url("smart watch full.png") no-repeat center center;
+	background: url("smart watch full.png") no-repeat top center;
 	background-size: cover; 
 }
 
@@ -167,15 +167,17 @@ nav  .register {
 	flex-wrap: wrap;
 }
 
-.l{
-	width: 50%;
-	height: auto;
-}
+
 
 .l1{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+.l{
+	width: 50%;
+	height: auto;
 }
 
 .l2{
@@ -193,6 +195,11 @@ nav  .register {
 	font-size: 2.2em;
 }
 
+
+.headin2{
+	background: #282b4f;
+	padding-bottom: 5vh;
+}
 .wat{
 	width: 300px;
 }
@@ -364,18 +371,14 @@ nav  .register {
 
 .im2{
 	background: url("poster 3.png") center right no-repeat;
-	background-size: cover; 
+	background-size: contain; 
 }
 
 .im3{
 	background: url("back.png") center right no-repeat;
-	background-size: cover; 
+	background-size: contain; 
 }
 
-.im4{
-	background: url("design5.png") top center no-repeat;
-	background-size: cover; 
-}
 
 .rightside{
 	width: 100vw;

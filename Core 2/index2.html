@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<link rel="stylesheet" type="text/css" href="inde.css">
+	<style type="text/css">
+
+</style>
+</head>
+<body>
+	<div class="containe">
+		<div class="s">
+			<div class="co1 animated">
+				<div class="lef">
+					<div class="l l2">
+						<div class="sml wa1 animated">
+							Inbuilt cellular options
+						</div>
+					</div>
+				</div>
+				<div class="center">
+					<div class="w1">
+						<div class="align">
+							<img src="watch1.png" class="animated wa1">
+						</div>
+					</div>
+				</div>
+				<div class="righ">
+					<div class="big wa1 animated">
+						Increase your <br> connectivity
+					</div>
+				</div>
+			</div>
+
+
+			<div class="co2">
+				<div class="lef">
+					<div class="l l2">
+						<div class="sml wa2 animated">
+							User Interface
+						</div>
+					</div>
+				</div>
+				<div class="center">
+					<img src="watch2.png" class="animated wa2">
+					<div class="w1">
+					</div>
+				</div>
+				<div class="righ">
+					<div class="big wa2 animated">
+						Interactive and<br> Intuitive UI
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var x = $(".s");
+			$('.co1').on('mousewheel', function(updown){
+				if(updown.originalEvent.wheelDelta/120 > 0) {
+				}else{
+					setTimeout(function () {
+						$(".wa1").addClass("fadeOutDown")
+						$(".wa2").addClass("fadeInUp")
+					}, 100)	
+
+					setTimeout(function () {
+						$(".co2").addClass("fadeInUp")
+
+					}, 1000)	
+				}
+			})	
+		});
+	</script>
+</body>
+</html>
