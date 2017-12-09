@@ -44,14 +44,55 @@ body{
 	bottom: 0;
 	width: 50%;
 	text-align: center;
-
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .btext{
-	transition: all 1s ease; 
+	font-family: open sans;
+	line-height:50px;
+	font-size: 30px; 
 	opacity: 0;
 }
 
+.menu{
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 
+}
+
+.b1{
+	animation-delay: 0.7s;
+	animation-duration: 0.5s;
+}
+
+.b2{
+	animation-delay: 0.8s;
+	animation-duration: 0.5s;
+}
+.b3{
+	animation-delay: 0.9s;
+	animation-duration: 0.5s;
+}
+.b4{
+	animation-delay: 1s;
+	animation-duration: 0.5s;
+}
+.b5{
+	animation-delay: 1.1s;
+	animation-duration: 0.5s;
+}
+.b6{
+	animation-delay: 1.2s;
+	animation-duration: 0.5s;
+}
+.b7{
+	animation-delay: 1.3s;
+	animation-duration: 0.5s;
+}
 
 .c{
 	z-index: 2;

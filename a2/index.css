@@ -1,0 +1,105 @@
+body{
+	margin: 0;
+}
+
+.con{
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.side{
+	position: absolute;
+	width: 0%;
+	height: 0%;
+	background: #333;
+	top: 0;
+	right: 0;
+	clip-path: polygon(0% 80%, 0% 100%, 10% 100%,100% 20%, 100% 0%, 90% 0%);
+	transform: scale(1.7);
+	z-index: 3;
+	transition: all 0.5s ease; 
+}
+
+.black{
+	position: absolute;
+	background: #0F0F0F;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 0;
+	z-index: 4;
+	clip-path: polygon(0% 0%, 0% 100%, 100% 100%);
+	transition: all 0.3s ease; 
+	color: #fff;
+	display: flex;
+}
+
+.bottom{
+	position: absolute;
+	height: 50%;
+	bottom: 0;
+	width: 50%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btext{
+	font-family: open sans;
+	line-height:50px;
+	font-size: 30px; 
+	opacity: 0;
+}
+
+.menu{
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 
+}
+
+.b1{
+	animation-delay: 0.7s;
+	animation-duration: 0.5s;
+}
+
+.b2{
+	animation-delay: 0.8s;
+	animation-duration: 0.5s;
+}
+.b3{
+	animation-delay: 0.9s;
+	animation-duration: 0.5s;
+}
+.b4{
+	animation-delay: 1s;
+	animation-duration: 0.5s;
+}
+.b5{
+	animation-delay: 1.1s;
+	animation-duration: 0.5s;
+}
+.b6{
+	animation-delay: 1.2s;
+	animation-duration: 0.5s;
+}
+.b7{
+	animation-delay: 1.3s;
+	animation-duration: 0.5s;
+}
+
+.c{
+	z-index: 2;
+	font-family: open sans;
+	font-size: 1.2em;
+	padding-top:20px ;
+	cursor: pointer;
+	position: absolute;
+	right: 20px;
+}
