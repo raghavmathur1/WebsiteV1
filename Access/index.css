@@ -52,12 +52,13 @@ body{
 .btext{
 	font-family: open sans;
 	line-height:50px;
-	font-size: 30px; 
+	font-size: 20px; 
 	opacity: 0;
+	cursor: pointer;
 }
 
 .menu{
-	height: 80%;
+	height: 60%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;

@@ -58,6 +58,7 @@
 			})
 			
 
+			
 			$(".bottom").click(function () {
 				z.removeClass("fadeInUp")
 				z.addClass("fadeOutDown")
@@ -72,12 +73,12 @@
 				}, 1800);
 
 				setTimeout(function() {
-					x.css({"transform":"scale(1.7)"})
+					x.css({"width":"0%", "height":"0%"})
 				}, 2800);
 
 				setTimeout(function() {
-					x.css({"width":"0%", "height":"0%"})
-				}, 3400);
+					x.css({"transform":"scale(1.7)"})
+				}, 4000);
 			})
 	</script>
 </body>
