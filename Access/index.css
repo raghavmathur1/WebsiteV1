@@ -1,6 +1,8 @@
 body{
 	margin: 0;
+	user-select: none;
 }
+
 
 .con{
 	height: 100vh;
@@ -9,29 +11,30 @@ body{
 	justify-content: center;
 	position: relative;
 	overflow: hidden;
+	background: #eee;
 }
 
 .side{
 	position: absolute;
 	width: 0%;
 	height: 0%;
-	background: #333;
+	background: #fff;
 	top: 0;
 	right: 0;
 	clip-path: polygon(0% 80%, 0% 100%, 10% 100%,100% 20%, 100% 0%, 90% 0%);
 	transform: scale(1.7);
-	z-index: 3;
+	z-index: 6;
 	transition: all 0.5s ease; 
 }
 
 .black{
 	position: absolute;
-	background: #0F0F0F;
+	background: #0f0f0f;
 	left: 0;
 	bottom: 0;
 	width: 0;
 	height: 0;
-	z-index: 4;
+	z-index: 6;
 	clip-path: polygon(0% 0%, 0% 100%, 100% 100%);
 	transition: all 0.3s ease; 
 	color: #fff;
@@ -58,7 +61,7 @@ body{
 }
 
 .menu{
-	height: 60%;
+	height: 40%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -96,14 +99,16 @@ body{
 }
 
 .c{
-	z-index: 2;
+	z-index:8;
 	font-family: open sans;
 	font-size: 1.2em;
 	padding-top:20px ;
 	cursor: pointer;
 	position: absolute;
+	transition: all 0.5s ease;
+	font-weight: bolder;
+	right: 20px;
 }
-
 .cont2{
 	height: 100vh;
 	width: 100vw;
@@ -118,6 +123,7 @@ body{
 .rectangle{
 	width: 80vw;
 	height: 80vh;
+	z-index: 1;
 	position: relative;
 }
 
@@ -127,19 +133,20 @@ body{
 	width: 100%;
 	height: 100%;
 	background: rgba(0,0,0, 0.7);
-	font-family: 'Fredoka One', cursive;
+	font-family: 'Montserrat', sans-serif;
 	color: #fff;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	text-rendering: optimizeLegibility;
 }
 
 .ctext{
 	font-size:3em ;
 	margin-top:-50px ;
-	letter-spacing: 20px;
-
+	text-align: center;
+	width: 80%;
 }
 
 .ctext2{
@@ -147,6 +154,19 @@ body{
 	margin-top: 50px;
 	font-family: open sans;
 	font-weight: lighter;
+}
+
+.d1{
+	letter-spacing: 30px;
+}
+
+.d2{
+	letter-spacing: 28px;
+}
+
+
+.d3{
+	letter-spacing: 28px;
 }
 
 .cut1{
@@ -174,7 +194,7 @@ body{
 }
 
 .s1{
-	background: url(im1.jpg) center center no-repeat;
+	background: url(im3.jpg) center center no-repeat;
 	background-size: cover;
 	height: 80vh;
 	width: 80vw;
@@ -206,3 +226,100 @@ body{
 	transition: all 2.1s cubic-bezier(0.77, 0, 0.175, 1); 
 }
 
+.ri{
+	z-index: 6;
+	background: #333;
+	position: absolute;
+	height: 100%;	
+	width: 100%;
+	right: -100%;
+	transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.le{
+	z-index: 6;
+	background: #333;
+	position: absolute;
+	height: 100%;	
+	width: 100%;
+	left: -100%;
+	transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.al{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+
+}
+
+.righ{
+	right: 0;
+	width: 0%;
+}
+
+.com{
+	transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+	font-family: open sans;
+	font-size: 15px;
+	font-weight: bolder;
+	height: 100%;
+	display: flex;
+	align-items:  center;
+	position: absolute;
+	letter-spacing: 4px;
+	z-index: 0;
+	background: #0f0f0f;
+}
+
+.lef{
+	left: 0;
+	width: 0%;
+}
+
+
+.rot{
+	position: absolute;
+	right: 0;
+	transform: rotate(90deg);
+	transition: all 0.7s ease;
+}
+
+
+.rot2{
+	position: absolute;
+	left: 0;
+	transform: rotate(-90deg);
+	transition: all 0.7s ease;
+}
+
+
+.rot:hover{
+	color: #eee;
+}
+
+.rot2:hover{
+	color: #eee;
+}
+
+.c2{
+	background: #eee;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 4;
+	right: -100%;
+	transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.c1{
+	background: #eee;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 4;
+	left: -100%;
+	transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
+}

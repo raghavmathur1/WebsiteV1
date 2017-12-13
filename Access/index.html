@@ -4,7 +4,7 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="animate.css">
 	<link rel="stylesheet" type="text/css" href="index.css">
-	<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
@@ -20,12 +20,10 @@
 			<div class="bottom"> 
 				<div class="menu">
 					<div class="btext animated b1">HOME</div>
-					<div class="btext animated b2">VIDEO LIBRARY</div>
-					<div class="btext animated b3">SHE FOR STEM</div>
+					<div class="btext animated b2">MEDIA</div>
+					<div class="btext animated b3">FEATURES</div>
 					<div class="btext animated b4">ABOUT US</div>
-					<div class="btext animated b5">RECOMMEND US</div>
-					<div class="btext animated b6">TESTIMONIALS</div>
-					<div class="btext animated b7">CONTACT US</div>
+					<div class="btext animated b5">CONTACT US</div>
 				</div>
 			</div>
 		</div>
@@ -52,9 +50,44 @@
 				</div>
 
 				<div class="cover">
-					<div class="ctext">HYPERLOOP-ONE</div>
-					<div class="ctext2">View Projects</div>
+					<div class="ctext">
+						<div class="d1">WE MAKE</div>
+						<div class="d2">TRANSPORT</div>
+						<div class="d3">FASTER</div>
+					</div>
 				</div>
+			</div>
+		</div>
+
+		<div class="ri">
+			
+		</div>
+
+		<div class="le">
+			
+		</div>
+
+		<div class="c1">
+			<div class="righ com">
+				<div class="rl4 rot">HOME</div>
+			</div>
+		</div>
+
+		<div class="c2">
+			<div class="lef com">
+				<div class="rl3 rot2">HOME</div>
+			</div>
+		</div>
+
+
+
+		<div class="al">
+			<div class="righ com">
+				<div class="rl1 rot">MEDIA</div>
+			</div>
+
+			<div class="lef com">
+				<div class="rl2 rot2">ABOUT</div>
 			</div>
 		</div>
 	</div>
@@ -69,55 +102,115 @@
 		$(document).ready(function () {
 
 			setTimeout(function () {
-					$(".slide").css({"left":"-80vw"})
+				$(".slide").css({"left":"-80vw"})
 			}, 2000)
 
 			x = $(".side");
 			y = $(".black");
 			z = $(".btext");
+			q = $(".rot");
+			w = $(".rot2");
+			a = 1;
 			$(".c").click(function () {
+				if(a==1){
 
-				x.css({"width":"100%", "height":"100%"})
-				setTimeout(function() {
-					x.css({"transform":"scale(1.4)"})
-				}, 500);
+					x.css({"width":"100%", "height":"100%"})
+					setTimeout(function() {
+						x.css({"transform":"scale(1.4)"})
+					}, 500);
 
-				setTimeout(function() {
-					x.css({"transform":"scale(11)"})
-				}, 1000);
+					setTimeout(function() {
+						x.css({"transform":"scale(11)"})
+					}, 1000);
 
-				setTimeout(function() {
-					y.css({"width":"200%", "height":"200%"})
-				}, 1300);
+					setTimeout(function() {
+						y.css({"width":"200%", "height":"200%"})
+					}, 1300);
 
-				setTimeout(function() {
-					z.removeClass("fadeOutDown")
-					z.addClass("fadeInUp")
-				}, 1900);
+					setTimeout(function() {
+						z.removeClass("fadeOutDown")
+						z.addClass("fadeInUp")
+						$(".c").css({"color":"#eee"})
+					}, 1900);
+					a=0;
+				}else{
+					z.removeClass("fadeInUp")
+					z.addClass("fadeOutDown")
+					$(".c").css({"color":"#000"})
+					setTimeout(function() {
+						y.css({"width":"0%", "height":"0%"})
+
+					}, 1400);
+
+					setTimeout(function() {
+						x.css({"transform":"scale(11)"})
+					}, 1800);
+
+					setTimeout(function() {
+						x.css({"width":"0%", "height":"0%"})
+					}, 2800);
+
+					setTimeout(function() {
+						x.css({"transform":"scale(1.7)"})
+					}, 4000);
+					a=1;
+				}
+			})
+
+
+			q.mouseenter(function () {
+				$(".righ").css({"width":"25%"})
+			})
+
+			q.mouseleave(function () {
+				$(".righ").css({"width":"0%"})
+			})
+
+			$(".rl1").click(function () {
+				$(".ri").css({"right":"0%"})
+				$(".c2").css({"right":"0%"})
+				setTimeout(function () {
+					$(".ri").css({"right":"100%"})
+				}, 1500)
+			})
+
+			w.mouseenter(function () {
+				$(".lef").css({"width":"25%"})
+			})
+
+			w.mouseleave(function () {
+				$(".lef").css({"width":"0%"})
+			})
+
+			$(".rl2").click(function () {
+				$(".le").css({"left":"0%"})
+				$(".c1").css({"left":"0%"})
+				setTimeout(function () {
+					$(".le").css({"left":"100%"})
+				}, 1500)
+			})
+			
+			$(".rl3").click(function () {
+				$(".ri").css({"right":"0%"})
+				setTimeout(function () {
+					$(".ri").css({"right":"-100%"})
+					$(".c2").css({"right":"-100%"})
+
+				}, 1500)
+			})
+
+			$(".rl4").click(function () {
+				$(".le").css({"left":"0%"})
+				setTimeout(function () {
+					$(".le").css({"left":"-100%"})
+					$(".c1").css({"left":"-100%"})
+
+				}, 1500)
 			})
 			
 
-			$(".bottom").click(function () {
-				z.removeClass("fadeInUp")
-				z.addClass("fadeOutDown")
-				
-				setTimeout(function() {
-					y.css({"width":"0%", "height":"0%"})
-					
-				}, 1400);
 
-				setTimeout(function() {
-					x.css({"transform":"scale(11)"})
-				}, 1800);
-
-				setTimeout(function() {
-					x.css({"width":"0%", "height":"0%"})
-				}, 2800);
-
-				setTimeout(function() {
-					x.css({"transform":"scale(1.7)"})
-				}, 4000);
-			})
+			
 		})
 	</script>
 </body>
