@@ -9,7 +9,7 @@
 </head>
 <body>
 	<div class="con">
-		<div class="c">
+		<div class="c animated slideInDown">
 			MENU
 		</div>
 		<div class="side">
@@ -29,23 +29,26 @@
 		</div>
 
 		<div class="cont2">
-			<div class="rectangle">
+			<div class="rectangle animated fadeIn">
 				<div class="cut1">
 					<div class="slide sl1">
 						<div class="s1"></div>
 						<div class="s2"></div>
+						<div class="s3"></div>
 					</div>
 				</div>
 				<div class="cut2">
 					<div class="slide sl2">
 						<div class="s1"></div>
 						<div class="s2"></div>
+						<div class="s3"></div>
 					</div>
 				</div>
 				<div class="cut3">
 					<div class="slide sl3">
 						<div class="s1"></div>
 						<div class="s2"></div>
+						<div class="s3"></div>
 					</div>
 				</div>
 
@@ -77,13 +80,29 @@
 			<div class="lef com">
 				<div class="rl3 rot2">HOME</div>
 			</div>
+
+			<div class="line">
+				<div class="ci"></div>
+				<div class="ci"></div>
+				<div class="ci"></div>
+				<div class="ci"></div>
+				<div class="ci"></div>
+			</div>
+
+			<div class="card card1">
+				<div class="date">Dec 16 2017</div>
+				<div class="carhead">Vehicle Unveiled</div>
+				<div class="ntext">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. 
+				</div>
+			</div>
 		</div>
-
-
-
 		<div class="al">
 			<div class="righ com">
-				<div class="rl1 rot">MEDIA</div>
+				<div class=" rl1 rot ">TIMELINE</div>
 			</div>
 
 			<div class="lef com">
@@ -100,17 +119,28 @@
 
 
 		$(document).ready(function () {
-
-			setTimeout(function () {
-				$(".slide").css({"left":"-80vw"})
-			}, 2000)
-
 			x = $(".side");
 			y = $(".black");
 			z = $(".btext");
 			q = $(".rot");
 			w = $(".rot2");
 			a = 1;
+			setTimeout(function () {
+				$(".rl1").css({"right":"0"})
+				$(".rl2").css({"left":"0"})
+			}, 500)
+
+			setTimeout(function () {
+				$(".slide").css({"left":"-80vw"})
+			}, 2000)
+
+			
+
+			setTimeout(function () {
+				$(".slide").css({"left":"-160vw"})
+			}, 5000)
+
+			
 			$(".c").click(function () {
 				if(a==1){
 
@@ -130,13 +160,11 @@
 					setTimeout(function() {
 						z.removeClass("fadeOutDown")
 						z.addClass("fadeInUp")
-						$(".c").css({"color":"#eee"})
 					}, 1900);
 					a=0;
 				}else{
 					z.removeClass("fadeInUp")
 					z.addClass("fadeOutDown")
-					$(".c").css({"color":"#000"})
 					setTimeout(function() {
 						y.css({"width":"0%", "height":"0%"})
 
@@ -166,13 +194,6 @@
 				$(".righ").css({"width":"0%"})
 			})
 
-			$(".rl1").click(function () {
-				$(".ri").css({"right":"0%"})
-				$(".c2").css({"right":"0%"})
-				setTimeout(function () {
-					$(".ri").css({"right":"100%"})
-				}, 1500)
-			})
 
 			w.mouseenter(function () {
 				$(".lef").css({"width":"25%"})
@@ -181,22 +202,45 @@
 			w.mouseleave(function () {
 				$(".lef").css({"width":"0%"})
 			})
+			$(".rl1").click(function () {
+				$(".ri").css({"right":"0%"})
+				$(".c2").css({"right":"0%"})
+				setTimeout(function () {
+					$(".ri").css({"right":"100%"})
+					$(".c").css({"color":"#000"})
+				}, 1500)
+
+				setTimeout(function () {
+					$(".line").css({"height":"86vh"})
+
+				}, 2000)
+
+				setTimeout(function () {
+					$(".ci").css({"transform":"scale(1)"})
+				}, 3000)
+			})
 
 			$(".rl2").click(function () {
 				$(".le").css({"left":"0%"})
 				$(".c1").css({"left":"0%"})
 				setTimeout(function () {
 					$(".le").css({"left":"100%"})
+					$(".c").css({"color":"#000"})
 				}, 1500)
+
+
+
 			})
-			
+
 			$(".rl3").click(function () {
 				$(".ri").css({"right":"0%"})
 				setTimeout(function () {
 					$(".ri").css({"right":"-100%"})
 					$(".c2").css({"right":"-100%"})
-
+					$(".c").css({"color":"#eee"})
 				}, 1500)
+
+				
 			})
 
 			$(".rl4").click(function () {
@@ -204,13 +248,14 @@
 				setTimeout(function () {
 					$(".le").css({"left":"-100%"})
 					$(".c1").css({"left":"-100%"})
-
+					$(".c").css({"color":"#eee"})
+					
 				}, 1500)
-			})
-			
 
 
-			
+			})	
+
+
 		})
 	</script>
 </body>

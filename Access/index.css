@@ -12,6 +12,7 @@ body{
 	position: relative;
 	overflow: hidden;
 	background: #eee;
+	background: #0C0C0C;
 }
 
 .side{
@@ -108,6 +109,9 @@ body{
 	transition: all 0.5s ease;
 	font-weight: bolder;
 	right: 20px;
+	color: #eee;
+	animation-delay: 0.7s;
+	animation-duration: 1.5s;
 }
 .cont2{
 	height: 100vh;
@@ -125,12 +129,16 @@ body{
 	height: 80vh;
 	z-index: 1;
 	position: relative;
+	overflow: hidden;
+	animation-delay: 0.7s;
+	animation-duration: 1.5s;
 }
 
 
 .cover{
 	position: absolute;
 	width: 100%;
+	z-index: 1;
 	height: 100%;
 	background: rgba(0,0,0, 0.7);
 	font-family: 'Montserrat', sans-serif;
@@ -170,7 +178,7 @@ body{
 }
 
 .cut1{
-	width: 100%;
+	width: 100.1%;
 	height: 100%;
 	clip-path: polygon(0% 0%, 90% 0%, 0% 40%);
 	position: absolute;
@@ -178,7 +186,7 @@ body{
 }
 
 .cut2{
-	width: 100%;
+	width: 100.1%;
 	height: 100%;
 	clip-path: polygon(0% 39%, 90% 0%, 100% 0%, 100% 50%, 10% 100%, 0% 100%);
 	position: absolute;
@@ -186,7 +194,7 @@ body{
 }
 
 .cut3{
-	width: 100%;
+	width: 100.1%;
 	height: 100%;
 	clip-path: polygon(10% 100%, 100% 49%, 100% 100%);
 	position: absolute;
@@ -206,8 +214,15 @@ body{
 	height: 80vh;
 	width: 80vw; 
 }
+
+.s3{
+	background: url(im1.jpg) center center no-repeat;
+	background-size: cover;
+	height: 80vh;
+	width: 80vw; 
+}
 .slide{
-	width:200%;
+	width:300%;
 	height: 100%;
 	display: flex;
 	position: absolute;
@@ -215,15 +230,15 @@ body{
 }
 
 .sl1{
-	transition: all 1.7s cubic-bezier(0.77, 0, 0.175, 1); 
+	transition: all 2s cubic-bezier(0.77, 0, 0.175, 1); 
 }
 
 .sl2{
-	transition: all 1.9s cubic-bezier(0.77, 0, 0.175, 1); 
+	transition: all 2.2s cubic-bezier(0.77, 0, 0.175, 1); 
 } 
 
 .sl3{
-	transition: all 2.1s cubic-bezier(0.77, 0, 0.175, 1); 
+	transition: all 2.4s cubic-bezier(0.77, 0, 0.175, 1); 
 }
 
 .ri{
@@ -283,18 +298,34 @@ body{
 .rot{
 	position: absolute;
 	right: 0;
-	transform: rotate(90deg);
-	transition: all 0.7s ease;
+	transform: rotate(90deg) !important;
+	transition: all 1.5s cubic-bezier(0.77, 0, 0.175, 1);
+	color: #eee;
 }
 
 
 .rot2{
 	position: absolute;
-	left: 0;
+	left: 0px;
 	transform: rotate(-90deg);
-	transition: all 0.7s ease;
+	transition: all 1.5s cubic-bezier(0.77, 0, 0.175, 1);
+	color: #eee;
 }
 
+.rl1{
+	right: -60px;
+}
+.rl2{
+	left: -50px;
+}
+
+.rl3{
+	color: #000;
+}
+
+.rl4{
+	color: #000;
+}
 
 .rot:hover{
 	color: #eee;
@@ -310,8 +341,10 @@ body{
 	width: 100%;
 	height: 100%;
 	z-index: 4;
-	right: -100%;
+	right: 00%;
 	transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
+	justify-content: center;
+	display: flex;
 }
 
 .c1{
@@ -322,4 +355,47 @@ body{
 	z-index: 4;
 	left: -100%;
 	transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.line{
+	width: 5px;
+	height: 86vh;
+	background: #FB4D3D;
+	border-radius: 100px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+	transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
+	margin-top: 7vh;
+}
+
+.ci{
+	width: 15px;
+	background: #FB4D3D;
+	border-radius: 100px;
+	height: 15px;
+	transform: scale(1);
+	transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
+	/*margin-bottom: 50px;*/
+}
+
+.card{
+	position: absolute;
+}
+
+.card1{
+	left: 53vw;
+	top: 6vh;	
+	font-family: open sans;
+	letter-spacing: 2px;
+	font-weight: lighter;	
+	font-size: 0.8em;	
+	width: 35%;
+}
+
+.carhead{
+	font-weight: bolder;
+	font-size: 1.2em;	
 }
