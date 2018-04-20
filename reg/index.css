@@ -1,5 +1,6 @@
 body{
 	margin: 0;
+	overflow-y: hidden;
 }
 
 .cont{
@@ -7,6 +8,14 @@ body{
 	display: flex;
 	height: 100vh;
 }
+.header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 650vh;
+	overflow: hidden;
+}
+
 
 .head{
 	text-align: center;
@@ -14,8 +23,13 @@ body{
 	font-weight: bold;
 	color: #3aaf70;
 	font-size: 30px;
-	margin-top: 50px;
 	width: 80vw;
+	height: 15vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #fff;
+	z-index: 100;
 }
 
 .side{
@@ -66,4 +80,19 @@ body{
 
 input{
 	outline: none;
+}
+
+.page{
+	height: 85vh;
+	width: 100%;
+}
+
+.pages{
+	display: flex;
+	flex-direction: column;
+	width: 80vw;
+	height: 650vh;
+	overflow-y: hidden;
+	position: relative;
+	top: 0;
 }

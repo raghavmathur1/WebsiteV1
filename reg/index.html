@@ -4,6 +4,7 @@
 	<title>Registration | XINO </title>
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
@@ -23,13 +24,58 @@
 			</div>
 
 		</div>
-		<div class="head">
+		<div class="header">
 			<div class="head">REGISTRATION FORM</div>
+			<div class="pages">
+				<div class="page page1">
+					<input type="" name="" placeholder="page1">
+				</div>
 
-			<input type="" name="">
+				<div class="page page2">
+					<input type="" name="" placeholder="page2">
+				</div>
+
+				<div class="page page3">
+					<input type="" name="" placeholder="page3">
+				</div>
+
+				<div class="page page4">
+					<input type="" name="" placeholder="page4">
+				</div>
+
+				<div class="page page5">
+					<input type="" name="" placeholder="page5">
+				</div>
+
+				<div class="page page6">
+					<input type="" name="" placeholder="page6">
+				</div>
+
+				<div class="page page7">
+					<input type="" name="" placeholder="page7">
+				</div>
+			</div>
 		</div>
 
 		
 	</div>
+
+	<script type="text/javascript" >
+		x=0;
+		$(".ar2").click(function () {
+			if (x<6) {
+				$(".pages").css({"top":"-=85vh"})
+				x++
+			}
+
+		})
+
+		$(".ar1").click(function () {
+			if (x>0) {
+				$(".pages").css({"top":"+=85vh"})
+				x--;
+			}
+		})
+	</script>
 </body>
 </html>
