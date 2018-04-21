@@ -14,13 +14,13 @@
 			<div class="arr ar2"><i class="fas fa-arrow-down"></i></div>
 
 			<div class="dots">
-				<div class="dot do2"></div>
-				<div class="dot"></div>
-				<div class="dot"></div>
-				<div class="dot"></div>
-				<div class="dot"></div>
-				<div class="dot"></div>
-				<div class="dot"></div>
+				<div class="dot d1 do2"></div>
+				<div class="dot d2"></div>
+				<div class="dot d3"></div>
+				<div class="dot d4"></div>
+				<div class="dot d5"></div>
+				<div class="dot d6"></div>
+				<div class="dot d7"></div>
 			</div>
 
 		</div>
@@ -28,31 +28,53 @@
 			<div class="head">REGISTRATION FORM</div>
 			<div class="pages">
 				<div class="page page1">
-					<input type="" name="" placeholder="page1">
+					<div>
+						<span><div class="flo f1">NAME OF THE SCHOOL</div><input type="" name="" placeholder="" class="i1"></input></span>
+						<span><div class="flo f2">NAME OF THE PRINCIPAL</div><input type="" name="" placeholder=""  class="i2"></span>
+						<span><div class="flo f3">NAME OF THE TEACHER INCHARGE</div><input type="" name="" placeholder=""  class="i3"></span>
+						<span><div class="flo f4">EMAIL ID OF THE TEACHER INCHARGE</div><input type="" name="" placeholder=""  class="i4"></span>
+						<span><div class="flo f5">TEL NO. OF THE TEACHER INCHARGE</div><input type="" name="" placeholder=""  class="i5"></span>
+						<span><div class="flo f6">NAME OF THE STUDENT INCHARGE</div><input type="" name="" placeholder=""  class="i6"></span>
+						<span><div class="flo f7">EMAIL ID OF THE STUDENT INCHARGE</div><input type="" name="" placeholder=""  class="i7"></span>
+						<span><div class="flo f8">TEL NO. OF THE STUDENT INCHARGE</div><input type="" name="" placeholder=""  class="i8"></span>
+					</div>
+					
 				</div>
 
 				<div class="page page2">
-					<input type="" name="" placeholder="page2">
+					<div>
+						<div class="eventname">TECH EXULT (QUIZ)</div>
+						<span><div class="flo f9">NAME OF PARTICIPANT 1</div><input type="" name="" placeholder="" class="i9"></input></span>
+						<span><div class="flo f10">EMAIL ID OF THE PARTICIPANT 1 </div><input type="" name="" placeholder=""  class="i10"></span>
+
+						<span><div class="flo f11">NAME OF PARTICIPANT 2</div><input type="" name="" placeholder="" class="i11"></input></span>
+						<span><div class="flo f12">EMAIL ID OF THE PARTICIPANT 2</div><input type="" name="" placeholder=""  class="i12"></span>
+						<div class="eventname2">X WORD (CROSSWORD)</div>
+						<span><div class="flo f13">NAME OF PARTICIPANT 1</div><input type="" name="" placeholder="" class="i13"></input></span>
+						<span><div class="flo f14">EMAIL ID OF THE PARTICIPANT 1 </div><input type="" name="" placeholder=""  class="i14"></span>
+
+						<span><div class="flo f15">NAME OF PARTICIPANT 2</div><input type="" name="" placeholder="" class="i15"></input></span>
+						<span><div class="flo f16">EMAIL ID OF THE PARTICIPANT 2</div><input type="" name="" placeholder=""  class="i16"></span>
+						
+						
+					</div>
 				</div>
 
 				<div class="page page3">
-					<input type="" name="" placeholder="page3">
 				</div>
 
 				<div class="page page4">
-					<input type="" name="" placeholder="page4">
 				</div>
 
 				<div class="page page5">
-					<input type="" name="" placeholder="page5">
+
 				</div>
 
 				<div class="page page6">
-					<input type="" name="" placeholder="page6">
 				</div>
 
 				<div class="page page7">
-					<input type="" name="" placeholder="page7">
+
 				</div>
 			</div>
 		</div>
@@ -61,21 +83,49 @@
 	</div>
 
 	<script type="text/javascript" >
-		x=0;
+		x=1;
 		$(".ar2").click(function () {
-			if (x<6) {
+			if (x<7) {
 				$(".pages").css({"top":"-=85vh"})
-				x++
+				x++;
+
+				$(".dot").removeClass("do2")
+				$(".d"+x).addClass("do2")
 			}
 
 		})
 
 		$(".ar1").click(function () {
-			if (x>0) {
+			if (x>1) {
 				$(".pages").css({"top":"+=85vh"})
 				x--;
+				$(".dot").removeClass("do2")
+				$(".d"+x).addClass("do2")
 			}
 		})
+
+		$(".i1").focus(function () {$(".f1").css({"bottom":"20px"})})
+		$(".i2").focus(function () {$(".f2").css({"bottom":"20px"})})
+		$(".i3").focus(function () {$(".f3").css({"bottom":"20px"})})
+		$(".i4").focus(function () {$(".f4").css({"bottom":"20px"})})
+		$(".i5").focus(function () {$(".f5").css({"bottom":"20px"})})
+		$(".i6").focus(function () {$(".f6").css({"bottom":"20px"})})
+		$(".i7").focus(function () {$(".f7").css({"bottom":"20px"})})
+		$(".i8").focus(function () {$(".f8").css({"bottom":"20px"})})
+		$(".i9").focus(function () {$(".f9").css({"bottom":"20px"})})
+		$(".i10").focus(function () {$(".f10").css({"bottom":"20px"})})
+		$(".i11").focus(function () {$(".f11").css({"bottom":"20px"})})
+		$(".i12").focus(function () {$(".f12").css({"bottom":"20px"})})
+		$(".i13").focus(function () {$(".f13").css({"bottom":"20px"})})
+		$(".i14").focus(function () {$(".f14").css({"bottom":"20px"})})
+		$(".i15").focus(function () {$(".f15").css({"bottom":"20px"})})
+		$(".i16").focus(function () {$(".f16").css({"bottom":"20px"})})
+		$(".i17").focus(function () {$(".f17").css({"bottom":"20px"})})
+		$(".i18").focus(function () {$(".f18").css({"bottom":"20px"})})
+		$(".i19").focus(function () {$(".f19").css({"bottom":"20px"})})
+
+		
+
 	</script>
 </body>
 </html>

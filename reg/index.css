@@ -24,7 +24,7 @@ body{
 	color: #3aaf70;
 	font-size: 30px;
 	width: 80vw;
-	height: 15vh;
+	height: 25vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -84,7 +84,11 @@ input{
 
 .page{
 	height: 85vh;
-	width: 100%;
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 25px;
+	position: relative;
 }
 
 .pages{
@@ -95,4 +99,81 @@ input{
 	overflow-y: hidden;
 	position: relative;
 	top: 0;
+	align-items: center;
 }
+
+.page div{
+	display: flex;
+	flex-wrap: wrap;
+	height: 70%;
+}
+
+input{
+	width: 350px; 
+	padding: 0 10px;
+	border: none;
+	font-size: 18px;
+	font-family: lato;
+	font-weight: lighter;
+	border-bottom:1px solid #3aaf70;
+	height: 50px;
+	margin:auto ;
+	position: relative;
+	z-index: 50;
+	background: transparent;
+
+}
+
+.eventname{
+	position: absolute;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	left: 60px;
+	font-family: lato;
+	font-size: 20px;
+	top:-5px;
+}
+
+.eventname2{
+	position: absolute;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	left: 60px;
+	font-family: lato;
+	font-size: 20px;
+	top: 33%;
+}
+
+.parti{
+	margin: 20px 0;
+}
+
+.thead{
+	font-size: 28px;
+	margin: 30px;
+}
+
+span{
+	margin: auto;
+	position: relative;
+}
+
+.flo{
+	font-family: lato;
+	font-weight: bold;
+	font-size: 10px;
+	position: absolute;
+	bottom: -10px;
+	left: 10px;
+	color: #2E3138;
+	opacity: 50%;
+	transition: all 0.3s ease;
+	z-index: 25;
+	user-select: none;
+}
+
+/*span:active > .flo{
+	bottom: 20px;
+}*/
