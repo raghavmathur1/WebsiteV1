@@ -68,6 +68,12 @@ a{
 	font-family: Lato;
 	font-weight: bold;
 	color: #3aaf70	;
+	height: auto;
+}
+
+.anim1{
+	position: absolute;
+	top: -20px;
 }
 
 .heading{
@@ -486,3 +492,33 @@ span
 	margin: 20px 0;
 	font-weight: bold;
 }
+
+@media(max-width: 750px){
+	.left{
+		width: 100vw;
+	}
+
+	.right{
+		display: none;
+		
+	}
+}
+
+@media(max-width: 500px){
+	.head{
+		font-size: 60px; 
+	}
+
+	.but1{
+		font-size: 16px;
+		height: 38px;
+		width: 110px;
+	}
+
+	.but2{
+		font-size: 16px;
+		height: 38px;
+		width: 110px;
+	}
+}
+
