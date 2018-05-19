@@ -189,6 +189,191 @@ h2
 	color: #3aaf70;
 }
 
+.section3
+{
+	width: 100%;
+	margin: auto;
+	height: auto;
+	padding: 30px 0;
+}
+
+.section3 h2
+{
+	width: 60%;
+	padding: 0 20%;
+}
+
+.events
+{
+	width: 100%;
+	height: auto;
+	margin-top: 20px;
+}
+
+.ev
+{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.details p span
+{
+	color: #eee;
+	font-weight: 800;
+}
+
+.dark p span
+{
+	color: #111;
+	font-weight: 800;
+}
+
+.greenD
+{
+	background: linear-gradient(345deg, #49c57c 0%, #49c18b 75%);
+}
+
+.greenD2
+{
+	background: linear-gradient(345deg, #e8f0ec 0%, #f4fcf8 75%);
+}
+
+.greenD3
+{
+	background: linear-gradient(345deg, #35a673 0%, #2fa16d 75%);
+}
+
+.yellow
+{
+	background: linear-gradient(345deg, #f4ba3f 0%, #ebbd5c 75%);
+}
+
+.blueL
+{
+	background: linear-gradient(345deg, #47b6c9 0%, #3bc7df 75%);
+}
+
+.blueD
+{
+	background: linear-gradient(345deg, #2a4570 0%, #2c4e86 75%);
+}
+
+.orange
+{
+	background: linear-gradient(345deg, #fd7c52 0%, #de7755 75%);
+}
+
+.white
+{
+	background: linear-gradient(345deg, #e8f0ec 0%, #f4fcf8 75%);
+}
+
+.white2{
+	background: #fff;
+}
+
+.purple
+{
+	background: linear-gradient(345deg, #4a1e2b 0%, #5c2334 75%);
+}
+
+.pink
+{
+	background: linear-gradient(345deg, #df337f 0%, #c23171 75%);
+}
+
+.ev img
+{
+	order: 1;
+	padding: 0;
+	width: 401.4px;
+	display: inline;
+	height: 300px;
+}
+
+.ev .details
+{
+	order: 1;
+	width: 40%;
+	margin: 40px 10% 0 0 ;
+	padding-bottom: 50px;
+}
+
+.ev .left
+{
+	margin: 40px 0% 0 10% ;
+}
+
+.ev h5
+{
+	font-size: 23px;
+	font-weight: 300;
+	color: #fff;
+	text-align: left;
+	letter-spacing: 1px;
+}
+
+.dark h5
+{
+	color: #000;
+}
+
+.ev h6
+{
+	font-size: 16px;
+	font-weight: 700;
+	text-align: left;
+	color: rgba(0,0,0,0.3);
+	letter-spacing: 0px;
+}
+
+.ev p
+{
+	text-align: left;
+	font-size: 16px;
+	font-weight: 300;
+	color: #eee;
+	margin: 10px 0;
+	line-height: 1.5em;
+}
+
+.dark p
+{
+	color: #333;
+}
+
+.section3 button
+{
+	line-height: 55px;
+	background: transparent;
+	border: 2px solid #49c18a;
+	outline: none;
+	display: block;
+	text-align: center;
+	color: #49c18a;
+	font-weight: 700;
+	margin: 40px auto;
+}
+
+.section3 button:hover
+{
+	background: #49c18a;
+	color: #fff;
+}
+
+.cent{
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+
+
+
 .section4
 {
 	padding: 10px 0;
@@ -521,4 +706,3 @@ span
 		width: 110px;
 	}
 }
-
