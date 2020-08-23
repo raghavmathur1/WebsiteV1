@@ -1,0 +1,151 @@
+body{
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+	background: #fefefe;
+	overflow-x: hidden;
+}
+
+.heading2{
+	text-align: center;
+	font-weight: 700;
+	color: #000;
+	font-size: 40px;
+}
+
+.subheading2{
+	text-align: center;
+	font-weight: 500;
+	color: #777;
+	font-size: 18px; 
+}
+
+.section6{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	padding: 70px 0;
+}
+
+.b1{  background: url("Portfolio Design.png"); }
+.b2{  background: url("UI Design.png"); }
+.b3{  background: url("UI Design 2.png"); }
+.b4{  background: url("UI Design 3.png"); }
+
+.background{
+	border-top-left-radius: 10px;
+	background-size: cover;
+	border-top-right-radius: 10px;
+	box-shadow: 0px 5px 15px 0 rgba(20,20,20,0.08);
+	width: 100%;
+	height: 290px;
+}
+.b5{ 
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	width: 100%;
+	box-shadow: 0px 5px 15px 0 rgba(20,20,20,0.08);
+	height: 900px;
+	background: url("design 2.png");
+	background-size: cover;
+	background-position: center;
+}
+.b6{  
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	width: 100%;
+	height: 900px;
+	box-shadow: 0px 5px 15px 0 rgba(20,20,20,0.08);
+	background: url("design5.png"); 
+	background-size: cover;
+	background-position: center;
+	background-size: 
+}
+.b7{  
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	width: 100%;
+	height: 900px;
+	box-shadow: 0px 5px 15px 0 rgba(20,20,20,0.08);
+	background: url("guideline.png"); 
+	background-size: cover;
+	background-size: 
+}
+
+.boxes{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-top: 20px;
+	justify-content: center;
+}
+
+.box{
+	width:500px ;
+	height: auto;
+	background-color: #fff;
+	margin: 40px ;
+	box-shadow: 5px 5px 20px 0 rgba(20,20,20,0.12);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 20px;
+
+}
+.econt{
+	margin-top: 20px;
+	width: 80%;
+}
+
+.eheads{
+	font-weight: 600;
+	font-size: 25px;
+	letter-spacing: 1.5px;
+}
+
+.esubheads{
+	font-size: 17px;
+	letter-spacing: 1.5px;
+}
+
+
+.etext{
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+.det{
+	font-size: 15px;
+}
+
+.bold{
+	font-weight: 500;
+}
+
+.red{
+	font-size: 30px;
+}
+
+.sboxes{
+	width: 80vw;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 30px 0;
+}
+
+.sbox{
+	width: auto;
+	height: 200px;
+	background: #fff;
+	box-shadow: 5px 5px 20px 0 rgba(20,20,20,0.12);
+	padding: 20px;
+	border-radius: 10px;
+	margin-bottom: 40px;
+}
+
+.size{
+	height: 200px;
+}
